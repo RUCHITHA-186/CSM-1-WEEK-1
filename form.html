@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Profile Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>GAYATRI VIDYA PARISHAD COLLEGE OF ENGINEERING FOR WOMEN(A)</h2>
+    <p>Madhurawada, Visakhapatnam – 530 048</p>
+    <h3>STUDENT PROFILE</h3>
+
+    <form id="studentForm">
+      <fieldset>
+        <legend>Student Information</legend>
+        <label>HT No: <input type="text" name="htno" /></label>
+        <label>Name (as per SSC): <input type="text" name="name" /></label>
+        <label>Branch: <input type="text" name="branch" /></label>
+        <label>Date of Birth (as per SSC): <input type="date" name="dob" /></label>
+        <label>Aadhar No: <input type="text" name="aadhar" /></label>
+        <label>Mobile No: <input type="tel" name="mobile" /></label>
+        <label>Email ID: <input type="email" name="email" /></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Educational Details</legend>
+        <h4>SSC / CBSE</h4>
+        <label>% of Marks: <input type="text" name="ssc_marks" /></label>
+        <label>Grade: <input type="text" name="ssc_grade" /></label>
+        <label>School & Place: <input type="text" name="ssc_school" /></label>
+
+        <h4>Intermediate / Diploma</h4>
+        <label>% of Marks: <input type="text" name="inter_marks" /></label>
+        <label>Grade: <input type="text" name="inter_grade" /></label>
+        <label>College & Place: <input type="text" name="inter_college" /></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Qualifying Exams</legend>
+        <label>EAMCET HT No: <input type="text" name="eamcet_ht" /></label>
+        <label>Year: <input type="text" name="eamcet_year" /></label>
+        <label>Rank: <input type="text" name="eamcet_rank" /></label>
+
+        <label>JEE HT No: <input type="text" name="jee_ht" /></label>
+        <label>Year: <input type="text" name="jee_year" /></label>
+        <label>Rank: <input type="text" name="jee_rank" /></label>
+
+        <label>ECET HT No: <input type="text" name="ecet_ht" /></label>
+        <label>Year: <input type="text" name="ecet_year" /></label>
+        <label>Rank: <input type="text" name="ecet_rank" /></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Admission Details</legend>
+        <label>Category of Admission:
+          <select name="admission_category">
+            <option value="EAMCET">EAMCET</option>
+            <option value="SPOT">SPOT</option>
+            <option value="ECET">ECET</option>
+          </select>
+        </label>
+        <label>Nationality & Religion: <input type="text" name="nationality" /></label>
+        <label>Caste & Category: <input type="text" name="caste" /></label>
+        <label>State: <input type="text" name="state" value="AP" /></label>
+        <label>Fee Reimbursement: 
+          <input type="radio" name="reimbursement" value="YES" /> Yes
+          <input type="radio" name="reimbursement" value="NO" /> No
+          <input type="radio" name="reimbursement" value="EWS" /> EWS
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Parent Details</legend>
+        <h4>Father</h4>
+        <label>Name: <input type="text" name="father_name" /></label>
+        <label>Qualification: <input type="text" name="father_qualification" /></label>
+        <label>Occupation: <input type="text" name="father_occupation" /></label>
+        <label>Annual Income: <input type="text" name="father_income" /></label>
+        <label>Mobile No: <input type="tel" name="father_mobile" /></label>
+        <label>Email ID: <input type="email" name="father_email" /></label>
+
+        <h4>Mother</h4>
+        <label>Name: <input type="text" name="mother_name" /></label>
+        <label>Qualification: <input type="text" name="mother_qualification" /></label>
+        <label>Occupation: <input type="text" name="mother_occupation" /></label>
+        <label>Annual Income: <input type="text" name="mother_income" /></label>
+        <label>Mobile No: <input type="tel" name="mother_mobile" /></label>
+        <label>Email ID: <input type="email" name="mother_email" /></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Address</legend>
+        <label>Permanent Address: <textarea name="permanent_address"></textarea></label>
+        <label>Contact Address: <textarea name="contact_address"></textarea></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Hostel / Local Guardian</legend>
+        <label>Hostel Name: <input type="text" name="hostel_name" /></label>
+        <label>Hostel Address: <textarea name="hostel_address"></textarea></label>
+        <label>Local Guardian Name: <input type="text" name="guardian_name" /></label>
+        <label>Guardian Address: <textarea name="guardian_address"></textarea></label>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
